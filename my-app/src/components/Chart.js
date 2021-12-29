@@ -3,10 +3,9 @@ import Plot from 'react-plotly.js'
 import axios from "axios";
 
 class Chart extends Component {
-    
-    constructor(props) {
-        super(props);
-        this.state = {data: []}
+
+    state = {
+        data:[]
     }
 
     componentDidMount () {
@@ -18,8 +17,8 @@ class Chart extends Component {
             }
         }).then((res) => {
             const data = res.data
-            this.setState(data)
-            console.log(res.data)
+            this.setState({data})
+
         })
 
     }
@@ -47,7 +46,18 @@ class Chart extends Component {
     render() {
         return (
             <div>
-                
+                <Plot
+                    data = {[
+                        {type: 'scatter',
+                            mode: 'lines',
+                            x: this.transformData(this.state.data)['x'],
+                            y: this.transformData(this.state.data)['y'],
+                            marker: {color: 'red'}
+                        },
+                    ]}
+                    layout = {{width:1000, height: 500, title: 'Repository sizes'}}
+                />
+
             </div>
         )
     }
