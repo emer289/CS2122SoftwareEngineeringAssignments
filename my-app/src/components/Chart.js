@@ -9,7 +9,7 @@ class Chart extends Component {
         this.state = {data: []}
     }
 
-    componentDidMount() {
+    componentDidMount () {
         const my_token = process.env.REACT_APP_RAPID_API_KEY
 
         axios.get('https://api.github.com/users/murphp15/repos', {
@@ -17,11 +17,12 @@ class Chart extends Component {
                 'Authorization': `token ${my_token}`
             }
         }).then((res) => {
-            console.log(res.data)
+            const data = res.data
+            this.setState(data)
         })
 
     }
-
+    
 
     render() {
         return (
