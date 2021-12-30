@@ -59,7 +59,7 @@ class ScatterChart extends Component {
                             marker: {color: 'red'}
                         },
                     ]}
-                    layout = {{width:1000, height: 500, title: 'Repository sizes'}}
+                    layout = {{width:1000, height: 500, title: 'Followers vs Following'}}
                 />
 
             </div>
