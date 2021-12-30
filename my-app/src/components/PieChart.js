@@ -18,7 +18,7 @@ class PieChart extends Component {
         }).then((res) => {
             const data = res.data
             this.setState({data})
-
+            console.log(data)
         })
 
     }
@@ -29,6 +29,17 @@ class PieChart extends Component {
         let y = []
 
         data.map(each => {
+            const my_token = process.env.REACT_APP_RAPID_API_KEY
+
+            axios.get('https://api.github.com/repos/pippy360/' + each.name + '/languages', {
+                'headers': {
+                    'Authorization': `token ${my_token}`
+                }
+            }).then((res) => {
+                const lang = res.data
+                console.log(data)
+            })
+            
             x.push(each.name)
             y.push(each.size)
         })
@@ -48,7 +59,7 @@ class PieChart extends Component {
             <div>
                 <Plot
                     data = {[{
-                    values: [19, 26, 55],
+                    values: this.transformData(this.state.data)['x'],
                     labels: ['Residential', 'Non-Residential', 'Utility'],
                     type: 'pie'
                 }]}
