@@ -5,52 +5,53 @@ import axios from "axios";
 class PieChart extends Component {
 
     state = {
-        data:[]
+        lang: []
     }
 
-    componentDidMount () {
+    componentDidMount() {
         const my_token = process.env.REACT_APP_RAPID_API_KEY
-
+        //getting the repos
         axios.get('https://api.github.com/users/murphp15/repos', {
             'headers': {
                 'Authorization': `token ${my_token}`
             }
         }).then((res) => {
             const data = res.data
-            this.setState({data})
+            //for each repo getting the languages
+            const lang = []
+            data.map(each => {
+                axios.get('https://api.github.com/repos/murphp15/' + each.name + '/languages', {
+                    'headers': {
+                        'Authorization': `token ${my_token}`
+                    }
+                }).then((response) => {
+
+                    const l = response.data
+                    Object.keys(l).map(a => {
+                            lang.push(a)
+                            this.setState({lang})
+                        }
+                    )
+                })
+            })
+
         })
 
     }
 
-    transformData (data) {
+    transformData(lang) {
         let plot_data = []
         let v = []
         let l = []
 
-        data.map(each => {
-            const my_token = process.env.REACT_APP_RAPID_API_KEY
-
-            axios.get('https://api.github.com/repos/murphp15/' + each.name + '/languages', {
-                'headers': {
-                    'Authorization': `token ${my_token}`
-                }
-            }).then((res) => {
-                const lang = res.data
-                v.push(each.name)
-                Object.keys(lang).map(a => {
-                    l.push(a)
-                    console.log(l)
-                }
-            )
-            })
-            
-
-        })
-
-        plot_data['v'] = v
-        plot_data['l'] = l
+        const map = lang.reduce((acc, e) => acc.set(e, (acc.get(e) || 0) + 1), new Map())
 
 
+        plot_data['v'] = map.values()
+        plot_data['l'] = map.keys()
+
+        console.log(plot_data['v'])
+        console.log(plot_data['l'])
 
         return plot_data
 
@@ -62,10 +63,10 @@ class PieChart extends Component {
             <div>
                 <Plot
                     data = {[{
-                    values: this.transformData(this.state.data)['x'],
-                    labels: ['Residential', 'Non-Residential', 'Utility'],
-                    type: 'pie'
-                }]}
+                        values: this.transformData(this.state.data)['v'],
+                        labels: this.transformData(this.state.data)['l'],
+                        type: 'pie'
+                    }]}
                     layout = {{
                         height: 400,
                         width: 500
