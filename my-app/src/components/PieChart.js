@@ -11,43 +11,46 @@ class PieChart extends Component {
     componentDidMount () {
         const my_token = process.env.REACT_APP_RAPID_API_KEY
 
-        axios.get('https://api.github.com/users/pippy360/repos', {
+        axios.get('https://api.github.com/users/murphp15/repos', {
             'headers': {
                 'Authorization': `token ${my_token}`
             }
         }).then((res) => {
             const data = res.data
             this.setState({data})
-            console.log(data)
         })
 
     }
 
     transformData (data) {
         let plot_data = []
-        let x = []
-        let y = []
+        let v = []
+        let l = []
 
         data.map(each => {
             const my_token = process.env.REACT_APP_RAPID_API_KEY
 
-            axios.get('https://api.github.com/repos/pippy360/' + each.name + '/languages', {
+            axios.get('https://api.github.com/repos/murphp15/' + each.name + '/languages', {
                 'headers': {
                     'Authorization': `token ${my_token}`
                 }
             }).then((res) => {
                 const lang = res.data
-                console.log(data)
+                v.push(each.name)
+                Object.keys(lang).map(a => {
+                    l.push(a)
+                    console.log(l)
+                }
+            )
             })
             
-            x.push(each.name)
-            y.push(each.size)
+
         })
 
-        plot_data['x'] = x
-        plot_data['y'] = y
+        plot_data['v'] = v
+        plot_data['l'] = l
 
-        console.log(plot_data)
+
 
         return plot_data
 
