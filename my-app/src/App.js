@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 import Button from './components/Button.js';
+import axios from 'axios';
 class App extends Component {
     constructor() {
         super();
+        this.state = {
+            username: 'No username',
+            info: ''
+        }
         this.handleClick = this.handleClick.bind(this)
     }
     handleClick(e) {
-        alert("The button was clicked");
+        axios.get('https://api.github.com/users/drastorguev')
+            .then(response => this.setState({
+                username: response.data.login,
+                info : JSON.stringify(response.data, undefined, 2)
+            }));
     }
     render() {
         return (
@@ -18,6 +27,10 @@ class App extends Component {
                     Watch this space...
                 </p>
                 <Button handleClick={this.handleClick}/>
+                <p><b>Username:</b></p>
+                <p>{this.state.username}</p>
+                <b>Information:</b>
+                <pre>{this.state.info}</pre>
             </div>
         );
     }
