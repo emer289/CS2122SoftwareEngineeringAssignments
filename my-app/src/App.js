@@ -5,7 +5,7 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            gitun: 'No username',
+            gitun: null,
             info: '',
             formData: {
                 username: '',
@@ -15,12 +15,14 @@ class App extends Component {
         this.handleFormChange= this.handleFormChange.bind(this);
     }
     handleUserFormSubmit(event) {
+        console.log("button pressed", this.state.buttonPressed)
         event.preventDefault();
         axios.get('https://api.github.com/users/'+this.state.formData.username)
             .then(response => this.setState({
                 gitun: response.data.login,
                 info : JSON.stringify(response.data, undefined, 2)
             })).catch((err) => { console.log(err); });
+
     };
     handleFormChange(event) {
         const obj = this.state.formData;
@@ -46,15 +48,18 @@ class App extends Component {
                 <p className="App-intro">
                     Watch this space...
                 </p>
-                <Form
-                    formData={this.state.formData}
-                    handleUserFormSubmit={this.handleUserFormSubmit}
-                    handleFormChange={this.handleFormChange}
-                />
-                {this.state.formData.username ?
-                    this.renderInfo()
-                    :
-                    <p></p>}
+                <div className="search">
+                    <Form
+                        formData={this.state.formData}
+                        handleUserFormSubmit={this.handleUserFormSubmit}
+                        handleFormChange={this.handleFormChange}
+                    />
+                    {this.state.gitun ?
+                        this.renderInfo()
+                        :
+                        <p></p>}
+                </div>
+
             </div>
         );
     }
