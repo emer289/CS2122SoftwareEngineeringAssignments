@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Form from './components/Form.jsx';
+import Form from './components/Form.js';
 class App extends Component {
     constructor() {
         super();
@@ -27,6 +27,16 @@ class App extends Component {
         obj[event.target.name] = event.target.value;
         this.setState(obj);
     };
+
+    renderInfo(){
+        return (
+            <div>
+            <p><b>Username:</b></p>
+            <p>{this.state.gitun}</p>
+            <b>Information:</b>
+            <pre>{this.state.info}</pre>
+        </div>)
+    }
     render() {
         return (
             <div className="App">
@@ -41,10 +51,10 @@ class App extends Component {
                     handleUserFormSubmit={this.handleUserFormSubmit}
                     handleFormChange={this.handleFormChange}
                 />
-                <p><b>Username:</b></p>
-                <p>{this.state.gitun}</p>
-                <b>Information:</b>
-                <pre>{this.state.info}</pre>
+                {this.state.formData.username ?
+                    this.renderInfo()
+                    :
+                    <p></p>}
             </div>
         );
     }
