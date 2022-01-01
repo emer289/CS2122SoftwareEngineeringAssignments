@@ -49,7 +49,7 @@ class App extends Component {
                 <p className="App-intro">
                     Watch this space...
                 </p>
-                <div className="search">
+                <div className="app-container">
                     <Form
                         formData={this.state.formData}
                         handleUserFormSubmit={this.handleUserFormSubmit}
