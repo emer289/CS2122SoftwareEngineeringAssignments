@@ -76,7 +76,7 @@ class PieChart extends Component {
                         labels: this.transformData(this.state.lang)['l'],
                         type: 'pie'
                     }]}
-                    layout = {{width:1000, height: 500, title: 'Languages Occurancs in Repos'}}
+                    layout = {{width:1000, height: 500, title: 'Languages Used in'+ this.state.user +'\'s Repositorys'}}
                 />
 
             </div>

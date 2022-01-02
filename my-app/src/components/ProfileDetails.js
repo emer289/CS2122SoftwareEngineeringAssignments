@@ -49,7 +49,7 @@ const ProfileDetails = (props) => {
           {props.infoclean.html_url ? <div><p><a href={props.infoclean.html_url} target="_blank">View on GitHub</a></p></div> : null }
         </div>
         <div>
-          {props.infoclean.login ? <div>{ <img src={"http://ghchart.rshah.org/"+props.infoclean.login} alt="Github chart" />
+          {props.infoclean.login ? <div>{src={"http://ghchart.rshah.org/"+props.infoclean.login} alt="Github chart" />
         }<br/><a href="https://ghchart.rshah.org/" target="_blank">Source for GitHub Chart API</a></div> : null }
         </div>
       </div>

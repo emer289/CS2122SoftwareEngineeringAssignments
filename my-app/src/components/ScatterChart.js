@@ -63,7 +63,7 @@ class ScatterChart extends Component {
                     layout={{
                         width: 1000,
                         height: 500,
-                        title: 'Followers vs Following' + this.state.followers.length
+                        title: 'Followers vs Following for '+ this.state.user + '\'s Followers'
                     }}
                 />
 
