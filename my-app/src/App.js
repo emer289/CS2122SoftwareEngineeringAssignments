@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Form from './components/Form.js';
+import Chart from './components/Chart'
+import PirChart from './components/PieChart'
+import ScatterPlot from './components/ScatterChart'
 import './App.css'
 class App extends Component {
     constructor() {
@@ -36,8 +39,9 @@ class App extends Component {
             <div>
             <p><b>Username:</b></p>
             <p>{this.state.gitun}</p>
-            <b>Information:</b>
-            <pre>{this.state.info}</pre>
+                <Chart user={this.state.formData.username}/>
+                <PirChart user={this.state.formData.username}/>
+                <ScatterPlot user={this.state.formData.username}/>
         </div>)
     }
     render() {
@@ -46,9 +50,7 @@ class App extends Component {
                 <header className="App-header">
                     <h1 className="App-title">GitHub Analytics</h1>
                 </header>
-                <p className="App-intro">
-                    Watch this space...
-                </p>
+                
                 <div className="app-container">
                     <Form
                         formData={this.state.formData}
