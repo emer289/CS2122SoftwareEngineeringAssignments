@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4044dc65-ff66-4cfb-9580-54635fd242f0" name="Default Changelist" comment="Code for a scatter plot with followe">
+    <list default="true" id="4044dc65-ff66-4cfb-9580-54635fd242f0" name="Default Changelist" comment="Updating the titles">
       <change afterPath="$PROJECT_DIR$/my-app/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/PieChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/PieChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/ProfileDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/ProfileDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/ScatterChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/ScatterChart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640802048279</updated>
       <workItem from="1640802050076" duration="238000" />
-      <workItem from="1640802364194" duration="44166000" />
+      <workItem from="1640802364194" duration="44479000" />
     </task>
     <task id="LOCAL-00001" summary="React app created">
       <created>1640802682177</created>
@@ -316,17 +306,41 @@
       <option name="project" value="LOCAL" />
       <updated>1641139791213</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Switching the ordering of the charts">
+      <created>1641139881608</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1641139881608</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Updating the titles of the graphs">
+      <created>1641139995130</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1641139995130</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Updating the titles">
+      <created>1641140061605</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1641140061605</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Committing the package.json,packeage-lock.json etc files">
+      <created>1641140165598</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1641140165598</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A get request made for the languages for each repo" />
-    <MESSAGE value="takes in the all the languages from all the repos and puts it in a flat array" />
-    <MESSAGE value="Added the data for representing the number of times each language is used in all the repos" />
-    <MESSAGE value="File added to display data using a scatter chart" />
     <MESSAGE value="Code for a scatter plot with following on the x axis and followers on the y axis. This data is from the followers of the given user" />
     <MESSAGE value="Updated title to represent what the chart is displaying" />
     <MESSAGE value="Await added to improve the display of the data" />
@@ -348,6 +362,10 @@
     <MESSAGE value="ProfileDetails.js made to pull together various data points of the profile" />
     <MESSAGE value="App.js updated to use ProfileDetails.js" />
     <MESSAGE value="Adding styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding styling" />
+    <MESSAGE value="Switching the ordering of the charts" />
+    <MESSAGE value="Updating the titles of the graphs" />
+    <MESSAGE value="Updating the titles" />
+    <MESSAGE value="Committing the package.json,packeage-lock.json etc files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Committing the package.json,packeage-lock.json etc files" />
   </component>
 </project>
