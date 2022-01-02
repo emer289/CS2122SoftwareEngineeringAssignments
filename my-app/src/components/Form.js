@@ -5,7 +5,6 @@ const Form = (props) => {
         <div className="form">
         <form onSubmit={(event) => props.handleUserFormSubmit(event)}>
             <label>
-                <p>Search:</p>
                 <input name="username"
                        type="text"
                        placeholder="GitHub username"

@@ -62,7 +62,7 @@ class Chart extends Component {
                             marker: {color: 'red'}
                         },
                     ]}
-                    layout={{width: 1000, height: 500, title: 'Repository sizes'}}
+                    layout={{width: 1000, height: 600, title: 'The Number of Lines for Each of ' + this.state.user + '\'s Repositorys'}}
                 />
 
             </div>
