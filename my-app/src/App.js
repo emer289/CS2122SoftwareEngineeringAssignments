@@ -41,9 +41,12 @@ class App extends Component {
             <p><b>Username:</b></p>
             <p>{this.state.gitun}</p>
                 <ProfileDetails infoclean={this.state.infoclean}/>
-                <Chart user={this.state.formData.username}/>
+
                 <PirChart user={this.state.formData.username}/>
                 <ScatterPlot user={this.state.formData.username}/>
+                <Chart user={this.state.formData.username}></Chart>
+
+
         </div>)
     }
     render() {
