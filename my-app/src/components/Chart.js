@@ -4,14 +4,20 @@ import axios from "axios";
 
 class Chart extends Component {
 
-    state = {
-        data:[]
+    constructor(props) {
+        super(props);
+        this.state = {
+            user: props.user,
+            data: []
+        }
+
     }
 
-    componentDidMount () {
+
+    componentDidMount() {
         const my_token = process.env.REACT_APP_RAPID_API_KEY
 
-        axios.get('https://api.github.com/users/pippy360/repos', {
+        axios.get('https://api.github.com/users/' + this.state.user + '/repos', {
             'headers': {
                 'Authorization': `token ${my_token}`
             }
@@ -23,7 +29,7 @@ class Chart extends Component {
 
     }
 
-    transformData (data) {
+    transformData(data) {
         let plot_data = []
         let x = []
         let y = []
@@ -35,27 +41,28 @@ class Chart extends Component {
 
         plot_data['x'] = x
         plot_data['y'] = y
+        console.log(plot_data['x'])
 
-        console.log(plot_data)
 
         return plot_data
 
     }
-    
+
 
     render() {
         return (
             <div>
                 <Plot
-                    data = {[
-                        {type: 'scatter',
+                    data={[
+                        {
+                            type: 'scatter',
                             mode: 'lines',
                             x: this.transformData(this.state.data)['x'],
                             y: this.transformData(this.state.data)['y'],
                             marker: {color: 'red'}
                         },
                     ]}
-                    layout = {{width:1000, height: 500, title: 'Repository sizes'}}
+                    layout={{width: 1000, height: 500, title: 'Repository sizes'}}
                 />
 
             </div>

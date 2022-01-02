@@ -4,16 +4,22 @@ import axios from "axios";
 
 class PieChart extends Component {
 
-    state = {
-        data: [],
-        lang: []
+    constructor(props){
+        super(props);
+        this.state = {
+            user:props.user,
+            data: [],
+            lang: []
+        
+        }
     }
+    
 
     async componentDidMount() {
         const my_token = process.env.REACT_APP_RAPID_API_KEY
         const lang = []
         //getting the repos
-        const res = await axios.get('https://api.github.com/users/murphp15/repos', {
+        const res = await axios.get('https://api.github.com/users/'+this.state.user+'/repos', {
             'headers': {
                 'Authorization': `token ${my_token}`
             }
@@ -23,7 +29,7 @@ class PieChart extends Component {
         //for each repo getting the languages
 
         for (const a of data) {
-            const resp = await axios.get('https://api.github.com/repos/murphp15/' + a.name + '/languages', {
+            const resp = await axios.get('https://api.github.com/repos/'+this.state.user+'/' + a.name + '/languages', {
                 'headers': {
                     'Authorization': `token ${my_token}`
                 }

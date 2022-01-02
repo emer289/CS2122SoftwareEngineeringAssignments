@@ -4,10 +4,15 @@ import axios from "axios";
 
 class ScatterChart extends Component {
 
-    state = {
-        following: [],
-        followers: [],
-        data: []
+    constructor(props) {
+        super(props);
+        this.state = {
+            user:props.user,
+            following: [],
+            followers: [],
+            data: []
+        }
+
     }
 
     async componentDidMount() {
@@ -15,7 +20,7 @@ class ScatterChart extends Component {
         const followers = []
         const following = []
 
-        const res = await axios.get('https://api.github.com/users/pippy360/followers', {
+        const res = await axios.get('https://api.github.com/users/' + this.state.user + '/followers', {
             'headers': {
                 'Authorization': `token ${my_token}`
             }
