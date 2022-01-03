@@ -41,7 +41,7 @@ class Chart extends Component {
 
         plot_data['x'] = x
         plot_data['y'] = y
-        console.log(plot_data['x'])
+
 
 
         return plot_data

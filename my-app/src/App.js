@@ -6,6 +6,7 @@ import PirChart from './components/PieChart'
 import ScatterPlot from './components/ScatterChart'
 import ProfileDetails from './components/ProfileDetails.js';
 import './App.css'
+import firebase from './components/Firebase'
 
 class App extends Component {
     constructor() {
@@ -19,6 +20,9 @@ class App extends Component {
         }
         this.handleUserFormSubmit = this.handleUserFormSubmit.bind(this);
         this.handleFormChange= this.handleFormChange.bind(this);
+        const ref = firebase.firestore().collection("developers")
+        console.log(ref)
+
     }
     handleUserFormSubmit(event) {
         event.preventDefault();

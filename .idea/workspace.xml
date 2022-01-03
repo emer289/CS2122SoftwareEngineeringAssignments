@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4044dc65-ff66-4cfb-9580-54635fd242f0" name="Default Changelist" comment="Updating the titles">
       <change afterPath="$PROJECT_DIR$/my-app/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Firebase.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640802048279</updated>
       <workItem from="1640802050076" duration="238000" />
-      <workItem from="1640802364194" duration="45320000" />
+      <workItem from="1640802364194" duration="45630000" />
     </task>
     <task id="LOCAL-00001" summary="React app created">
       <created>1640802682177</created>
@@ -351,16 +349,34 @@
       <option name="project" value="LOCAL" />
       <updated>1641210840480</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Installing Firebase on my local machine to add a database to my project">
+      <created>1641211294717</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1641211294717</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Firebase.js created to store the database info">
+      <created>1641211354862</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1641211354862</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Setup for firebase completed">
+      <created>1641211554084</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1641211554084</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Await added to improve the display of the data" />
-    <MESSAGE value="Added await to display the data from the API" />
-    <MESSAGE value="Button created" />
     <MESSAGE value="Importing Button and using it" />
     <MESSAGE value="Using axios to request information from github. This code is taken from https://medium.com/hackernoon/building-github-profile-analytics-using-react-part-1-37e03b0c3366" />
     <MESSAGE value="The Search button replaced with a from to allow users to search GitHub by username. This code is taken from https://medium.com/hackernoon/building-github-profile-analytics-using-react-part-1-37e03b0c3366" />
@@ -383,6 +399,9 @@
     <MESSAGE value="Committing the package.json,packeage-lock.json etc files" />
     <MESSAGE value="Fixing bug, the wrong variable was being used" />
     <MESSAGE value="Adding styling, changing the colour of the body to coral" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding styling, changing the colour of the body to coral" />
+    <MESSAGE value="Installing Firebase on my local machine to add a database to my project" />
+    <MESSAGE value="Firebase.js created to store the database info" />
+    <MESSAGE value="Setup for firebase completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup for firebase completed" />
   </component>
 </project>

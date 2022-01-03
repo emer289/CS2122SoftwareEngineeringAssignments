@@ -55,8 +55,7 @@ class PieChart extends Component {
         plot_data['v'] = Array.from(map.values())
         plot_data['l'] = Array.from(map.keys())
 
-        console.log(plot_data['v'])
-        console.log(plot_data['l'])
+
 
 
         return plot_data
