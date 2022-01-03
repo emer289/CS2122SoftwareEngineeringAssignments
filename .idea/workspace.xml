@@ -4,7 +4,8 @@
     <list default="true" id="4044dc65-ff66-4cfb-9580-54635fd242f0" name="Default Changelist" comment="Updating the titles">
       <change afterPath="$PROJECT_DIR$/my-app/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640802048279</updated>
       <workItem from="1640802050076" duration="238000" />
-      <workItem from="1640802364194" duration="44957000" />
+      <workItem from="1640802364194" duration="45320000" />
     </task>
     <task id="LOCAL-00001" summary="React app created">
       <created>1640802682177</created>
@@ -343,14 +344,20 @@
       <option name="project" value="LOCAL" />
       <updated>1641140241679</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Adding styling, changing the colour of the body to coral">
+      <created>1641210840480</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1641210840480</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated title to represent what the chart is displaying" />
     <MESSAGE value="Await added to improve the display of the data" />
     <MESSAGE value="Added await to display the data from the API" />
     <MESSAGE value="Button created" />
@@ -375,6 +382,7 @@
     <MESSAGE value="Updating the titles" />
     <MESSAGE value="Committing the package.json,packeage-lock.json etc files" />
     <MESSAGE value="Fixing bug, the wrong variable was being used" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing bug, the wrong variable was being used" />
+    <MESSAGE value="Adding styling, changing the colour of the body to coral" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding styling, changing the colour of the body to coral" />
   </component>
 </project>
