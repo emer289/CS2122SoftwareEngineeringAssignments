@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4044dc65-ff66-4cfb-9580-54635fd242f0" name="Default Changelist" comment="Updating the titles">
       <change afterPath="$PROJECT_DIR$/my-app/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640802048279</updated>
       <workItem from="1640802050076" duration="238000" />
-      <workItem from="1640802364194" duration="44479000" />
+      <workItem from="1640802364194" duration="44957000" />
     </task>
     <task id="LOCAL-00001" summary="React app created">
       <created>1640802682177</created>
@@ -334,14 +336,20 @@
       <option name="project" value="LOCAL" />
       <updated>1641140165598</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Fixing bug, the wrong variable was being used">
+      <created>1641140241679</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1641140241679</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Code for a scatter plot with following on the x axis and followers on the y axis. This data is from the followers of the given user" />
     <MESSAGE value="Updated title to represent what the chart is displaying" />
     <MESSAGE value="Await added to improve the display of the data" />
     <MESSAGE value="Added await to display the data from the API" />
@@ -366,6 +374,7 @@
     <MESSAGE value="Updating the titles of the graphs" />
     <MESSAGE value="Updating the titles" />
     <MESSAGE value="Committing the package.json,packeage-lock.json etc files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Committing the package.json,packeage-lock.json etc files" />
+    <MESSAGE value="Fixing bug, the wrong variable was being used" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing bug, the wrong variable was being used" />
   </component>
 </project>
