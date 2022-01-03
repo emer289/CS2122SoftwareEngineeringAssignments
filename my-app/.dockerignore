@@ -1,0 +1,6 @@
+# All the files that are not our docker build
+Dockerfile
+.dockerignore
+.gitignore
+
+node_modules
