@@ -10,7 +10,7 @@ given user) and finally a chart showing the size of each repository for the give
 
 
 # Video Demo
-
+![](https://github.com/emer289/GithubApiVis/blob/main/my-app/SWENG_pippy.gif)
 
 # Getting Started with Create React App
 
