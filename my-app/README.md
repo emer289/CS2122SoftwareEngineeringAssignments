@@ -1,12 +1,10 @@
 # CSU33012 Software Engineering Assignment
-
 # Assignment Title: Software Engineering Metric Visualisation
 
 My project takes a Github user as input and then returns the information for this user using the Github 
 API. It displays information about the user, a pie chart showing the languages used in the repos, a 
 scatter chart showing the follower vs following (this information is taken from the followers of the 
 given user) and finally a chart showing the size of each repository for the given user.
-
 
 
 # Video Demo
