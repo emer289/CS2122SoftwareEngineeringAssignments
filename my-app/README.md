@@ -1,6 +1,6 @@
-#CSU33012 Software Engineering Assignment
+# CSU33012 Software Engineering Assignment
 
-#Assignment Title: Software Engineering Metric Visualisation
+# Assignment Title: Software Engineering Metric Visualisation
 
 My project takes a Github user as input and then returns the information for this user using the Github 
 API. It displays information about the user, a pie chart showing the languages used in the repos, a 
@@ -16,11 +16,12 @@ given user) and finally a chart showing the size of each repository for the give
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+# `npm install`
+# `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
