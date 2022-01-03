@@ -1,4 +1,6 @@
+
 # CSU33012 Software Engineering Assignment
+
 # Assignment Title: Software Engineering Metric Visualisation
 
 My project takes a Github user as input and then returns the information for this user using the Github 
@@ -8,7 +10,7 @@ given user) and finally a chart showing the size of each repository for the give
 
 
 # Video Demo
-![](https://github.com/emer289/GithubApiVis/blob/main/my-app/SWENG_pippy.gif)
+https://drive.google.com/file/d/1vYYqTQlrawfaNRsmP4pss2cwdtXq15SE/view?usp=sharing
 
 # Getting Started with Create React App
 
