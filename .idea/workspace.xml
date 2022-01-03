@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4044dc65-ff66-4cfb-9580-54635fd242f0" name="Default Changelist" comment="Updating the titles">
       <change afterPath="$PROJECT_DIR$/my-app/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Firebase.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640802048279</updated>
       <workItem from="1640802050076" duration="238000" />
-      <workItem from="1640802364194" duration="45630000" />
+      <workItem from="1640802364194" duration="50059000" />
     </task>
     <task id="LOCAL-00001" summary="React app created">
       <created>1640802682177</created>
@@ -370,14 +372,20 @@
       <option name="project" value="LOCAL" />
       <updated>1641211554084</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Cleaning up the code by removing console.log()">
+      <created>1641211820523</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1641211820523</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Importing Button and using it" />
     <MESSAGE value="Using axios to request information from github. This code is taken from https://medium.com/hackernoon/building-github-profile-analytics-using-react-part-1-37e03b0c3366" />
     <MESSAGE value="The Search button replaced with a from to allow users to search GitHub by username. This code is taken from https://medium.com/hackernoon/building-github-profile-analytics-using-react-part-1-37e03b0c3366" />
     <MESSAGE value="Updated to use Form. This code is taken from https://medium.com/hackernoon/building-github-profile-analytics-using-react-part-1-37e03b0c3366" />
@@ -402,6 +410,7 @@
     <MESSAGE value="Installing Firebase on my local machine to add a database to my project" />
     <MESSAGE value="Firebase.js created to store the database info" />
     <MESSAGE value="Setup for firebase completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup for firebase completed" />
+    <MESSAGE value="Cleaning up the code by removing console.log()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaning up the code by removing console.log()" />
   </component>
 </project>
